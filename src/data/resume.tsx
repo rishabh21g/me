@@ -62,7 +62,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "25f1002822@ds.study.iitm.ac.in",
@@ -89,12 +88,19 @@ export const DATA = {
 
         navbar: true,
       },
+      insta: {
+        name: "Instagram",
+        url: "https://www.instagram.com/rishabh21g_/",
+        icon: Icons.insta,
+
+        navbar: true,
+      },
       email: {
         name: "Send Email",
         url: "https://mail.google.com/mail/?view=cm&fs=1&to=25f1002822@ds.study.iitm.ac.in",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
