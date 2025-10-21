@@ -26,6 +26,8 @@ import {
   SiPostgresql,
   SiMysql,
   SiJsonwebtokens,
+  SiExpo,
+  SiReactquery,
 } from "react-icons/si";
 import { FaWindows } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
@@ -45,10 +47,13 @@ export const DATA = {
     { name: "SQL", icon: <SiMysql className="w-5 h-5" /> },
     { name: "HTML", icon: <SiHtml5 className="w-5 h-5" /> },
     { name: "React.js", icon: <SiReact className="w-5 h-5" /> },
+    { name: "React Native", icon: <SiReact className="w-5 h-5" /> },
     { name: "Next.js", icon: <SiNextdotjs className="w-5 h-5" /> },
     { name: "Shadcn UI", icon: <SiShadcnui className="w-5 h-5" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="w-5 h-5" /> },
     { name: "Redux Toolkit", icon: <SiRedux className="w-5 h-5" /> },
+    { name: "Tanstack Query", icon: <SiReactquery className="w-5 h-5" /> },
+    { name: "Expo", icon: <SiExpo className="w-5 h-5" /> },
     { name: "Node.js", icon: <SiNodedotjs className="w-5 h-5" /> },
     { name: "Express.js", icon: <SiExpress className="w-5 h-5" /> },
     { name: "Go-Gin", icon: <SiGo className="w-5 h-5" /> },
@@ -201,6 +206,55 @@ export const DATA = {
           type: "Website",
           href: "https://github.com/rishabh21g/hiresense.git",
           icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Interview Platform",
+      href: "https://github.com/rishabh21g/LK-interview-app.git",
+      dates: "",
+      active: true,
+      description:
+        "Created a full-stack mobile interview platform with React Native and Expo, enabling users to schedule and reschedule interviews, conduct live video interviews with real-time camera access, record and transcribe responses using AI speech-to-text, and send recordings to the server for AI analysis. Utilized TanStack Query for efficient data fetching, Context API for state management, and Expo Router for seamless navigation.",
+      technologies: [
+        "React Native",
+        "Expo",
+        "TanStack Query",
+        "Context API",
+        "Expo Router",
+        "AI Speech-to-Text",
+        "Expo Camera",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://github.com/rishabh21g/LK-interview-app.git",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Flappy Bird Mobile Game",
+      href: "https://github.com/rishabh21g/flappy-bird.git",
+      dates: "",
+      active: true,
+      description:
+        "Built a fully functional Flappy Bird clone using React Native and Expo with high-performance graphics and smooth animations. Implemented physics-based gameplay mechanics, collision detection, real-time scoring, and gesture controls using Skia for 2D rendering and Reanimated for fluid animations. Features include game state management, responsive touch controls, and optimized performance",
+      technologies: [
+        "React Native",
+        "Expo",
+        "React Native Skia",
+        "React Native Reanimated",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/rishabh21g/flappy-bird.git",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",

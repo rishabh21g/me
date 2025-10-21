@@ -98,7 +98,7 @@ export default function Page() {
         </div>
       </section>
       <section id="projects">
-        <div className="space-y-8 w-full py-8">
+        <div className="space-y-8 w-full py-10">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <h2 className="md:text-3xl text-xl tracking-tighter font-semibold">
               Projects
