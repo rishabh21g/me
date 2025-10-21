@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 import { RiJavaLine } from "react-icons/ri";
 import {
   SiJavascript,
@@ -22,43 +22,54 @@ import {
   SiVercel,
   SiLinux,
   SiShadcnui,
+  SiDocker,
+  SiPostgresql,
+  SiMysql,
+  SiJsonwebtokens,
 } from "react-icons/si";
 import { FaWindows } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 
 export const DATA = {
   name: "Rishabh Gupta",
-  initials: "DV",
-  location: "Saket, New Delhi ",
-  description: "Software Development Engineer",
-  summary: "Software Development Engineer",
-  // avatarUrl: "/me.png",
+  initials: "RG",
+  location: "Saket, New Delhi",
+  description:
+    "Software Development Engineer specializing in designing, developing, and maintaining scalable applications, writing clean and efficient code, and collaborating with cross-functional teams to deliver high-quality software solutions",
   skills: [
-    { name: "JavaScript", icon: <SiJavascript /> },
-    { name: "TypeScript", icon: <SiTypescript /> },
-    { name: "Java", icon: <RiJavaLine /> },
-    { name: "Python", icon: <SiPython /> },
-    { name: "Go", icon: <SiGo /> },
-    { name: "HTML", icon: <SiHtml5 /> },
-    { name: "React.js", icon: <SiReact /> },
-    { name: "Next.js", icon: <SiNextdotjs /> },
-    { name: "Shadcn UI", icon: <SiShadcnui /> }, // No official icon, using cube as placeholder
-    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-    { name: "Redux Toolkit", icon: <SiRedux /> },
-    { name: "Node.js", icon: <SiNodedotjs /> },
-    { name: "Express.js", icon: <SiExpress /> },
-    { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "Firebase", icon: <SiFirebase /> },
-    { name: "Supabase", icon: <SiSupabase /> },
-    { name: "GitHub", icon: <SiGithub /> },
-    { name: "Git", icon: <SiGit /> },
-    { name: "NPM", icon: <SiNpm /> },
-    { name: "VS Code", icon: <VscVscode /> },
-    { name: "Linux", icon: <SiLinux /> },
-    { name: "Windows", icon: <FaWindows /> },
-    { name: "Vercel", icon: <SiVercel /> },
+    { name: "Go", icon: <SiGo className="w-5 h-5" /> },
+    { name: "JavaScript", icon: <SiJavascript className="w-5 h-5" /> },
+    { name: "TypeScript", icon: <SiTypescript className="w-5 h-5" /> },
+    { name: "Java", icon: <RiJavaLine className="w-5 h-5" /> },
+    { name: "Python", icon: <SiPython className="w-5 h-5" /> },
+    { name: "SQL", icon: <SiMysql className="w-5 h-5" /> },
+    { name: "HTML", icon: <SiHtml5 className="w-5 h-5" /> },
+    { name: "React.js", icon: <SiReact className="w-5 h-5" /> },
+    { name: "Next.js", icon: <SiNextdotjs className="w-5 h-5" /> },
+    { name: "Shadcn UI", icon: <SiShadcnui className="w-5 h-5" /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss className="w-5 h-5" /> },
+    { name: "Redux Toolkit", icon: <SiRedux className="w-5 h-5" /> },
+    { name: "Node.js", icon: <SiNodedotjs className="w-5 h-5" /> },
+    { name: "Express.js", icon: <SiExpress className="w-5 h-5" /> },
+    { name: "Go-Gin", icon: <SiGo className="w-5 h-5" /> },
+    { name: "Gorm", icon: <SiGo className="w-5 h-5" /> },
+    { name: "JWT", icon: <SiJsonwebtokens className="w-5 h-5" /> },
+    { name: "MongoDB", icon: <SiMongodb className="w-5 h-5" /> },
+    { name: "PostgreSQL", icon: <SiPostgresql className="w-5 h-5" /> },
+    { name: "Firebase", icon: <SiFirebase className="w-5 h-5" /> },
+    { name: "Supabase", icon: <SiSupabase className="w-5 h-5" /> },
+    { name: "Docker", icon: <SiDocker className="w-5 h-5" /> },
+    { name: "GitHub", icon: <SiGithub className="w-5 h-5" /> },
+    { name: "Git", icon: <SiGit className="w-5 h-5" /> },
+    { name: "NPM", icon: <SiNpm className="w-5 h-5" /> },
+    { name: "VS Code", icon: <VscVscode className="w-5 h-5" /> },
+    { name: "Linux", icon: <SiLinux className="w-5 h-5" /> },
+    { name: "Windows", icon: <FaWindows className="w-5 h-5" /> },
+    { name: "Vercel", icon: <SiVercel className="w-5 h-5" /> },
   ],
+
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
+
   contact: {
     email: "rishabhiitm@zohomail.in",
     tel: "+91 8840952165",
@@ -67,35 +78,30 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/rishabh21g",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/rishabh19g/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       X: {
         name: "X",
         url: "https://x.com/rishabh21g",
         icon: Icons.x,
-
         navbar: true,
       },
       insta: {
         name: "Instagram",
         url: "https://www.instagram.com/rishabh21g_/",
         icon: Icons.insta,
-
         navbar: true,
       },
       email: {
         name: "Send Email",
-        url: "https://mail.google.com/mail/?view=cm&fs=1&to=25f1002822@ds.study.iitm.ac.in",
+        url: "https://mail.google.com/mail/?view=cm&fs=1&to=rishabhiitm@zohomail.in",
         icon: Icons.email,
-
         navbar: true,
       },
     },
@@ -103,66 +109,74 @@ export const DATA = {
 
   work: [
     {
-      company: "Social Zone",
-      href: "https://socialzone.in/",
-      badges: [],
+      company: "Logicknots",
+      href: "https://logicknots.com/",
+      badges: ["React.js", "React Native", "Go", "Docker"],
       location: "Remote",
-      title: "Freelance Web Developer",
-      logoUrl: "",
-      start: "Feb 2025",
+      title: "Software Development Engineer I",
+      logoUrl:
+        "https://img1.wsimg.com/isteam/ip/10b30228-4a24-4f3d-94c8-9506e8adf5f0/favicon/de210abc-ac47-47a4-8ef8-43456bda1cc8.png/:/rs=w:32,h:32,m",
+      start: "Jul 2025",
       end: "Present",
       description:
-        "Worked as a freelance developer for SocialZone, a marketing agency, handling various development projects. Designed and built their official website using React.js, Framer Motion, and Tailwind CSS, ensuring a seamless user experience with smooth animations and modern UI. Collaborated with the team to enhance their digital presence through high-performance web solutions",
+        "Promoted from Intern to SDE I for leading end-to-end development of a Canvas-based draw editor (React.js) and cross-platform LMS app (React Native/Expo). Built performant Golang APIs, implemented efficient state management with TanStack Query and Context API, developed core Canvas tools (ruler, rectangle, guides), and containerized services with Docker for CI/CD.",
+    },
+    {
+      company: "Social Zone",
+      href: "https://socialzone.in/",
+      badges: ["React.js", "Framer Motion", "Tailwind CSS"],
+      location: "Remote",
+      title: "Freelance Web Developer",
+      logoUrl: "https://www.socialzone.in/assets/logo-D5fN-B7x.png",
+      start: "Feb 2025",
+      end: "Jun 2025",
+      description:
+        "Developed the company’s official website using React.js, Framer Motion, and Tailwind CSS, delivering a modern, animation-rich interface with optimized performance and scalable design system.",
     },
   ],
+
   education: [
     {
-      school: "India institute of Technology Madras",
+      school: "Indian Institute of Technology Madras",
       href: "https://www.iitm.ac.in/",
-      degree: "Bachelor in Data Science with AI/ML",
+      degree: "Bachelor in Data Science with AI and ML",
       logoUrl: "/iitm.png",
       start: "Jan 2025",
       end: "Present",
     },
     {
       school: "Dr APJ Abdul Kalam Technical University",
-      href: "www.united.ac.in",
-      degree: "Bachelor of Technology in Computer Science (Btech)",
+      href: "https://aktu.ac.in/",
+      degree: "Bachelor of Technology in Computer Science (B.Tech)",
       logoUrl: "/aktu.jpeg",
       start: "2022",
       end: "2026",
     },
   ],
+
   projects: [
     {
-      title: "Trip-X",
-      href: "https://trip-planner-snowy.vercel.app/",
+      title: "MailGo (Concurrent Email Sender)",
+      href: "https://github.com/rishabh21g/mailchimp",
       dates: "",
       active: true,
       description:
-        "Developed Trip-X, an intelligent travel recommendation platform that transforms user wanderlust into personalized adventures. Built with React.js, Tailwind CSS, and Firebase, it integrates multiple APIs to deliver real-time hotel suggestions, curated itineraries, and dynamic destination overviews.",
-      technologies: [
-        "React.js",
-        "Tailwind CSS",
-        "Firebase",
-        "Google Places API",
-        "Unsplash API",
-        "Google Search Text API",
-        "Gemini API",
-      ],
+        "Built MailGo, a full-fledged concurrent email sender written in Go (Golang) with a complete web dashboard. Users can authenticate (Gin + JWT), select templates, upload CSVs, and send bulk emails concurrently with rate-limited goroutines. Integrated PostgreSQL for user management, dynamic HTML templates, and Mailpit for SMTP testing.",
+      technologies: ["Golang", "Gin", "PostgreSQL", "JWT", "Mailpit", "Docker"],
       links: [
         {
-          type: "Website",
-          href: "https://trip-planner-snowy.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
+          type: "Source",
+          href: "https://github.com/rishabh21g/mailchimp",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
       video: "",
     },
+
     {
       title: "Hiresense",
-      href: "https://github.com/rishabh21g/hiresense.git",
+      href: "https://hiresense.vercel.app/",
       dates: "",
       active: true,
       description:
@@ -178,9 +192,9 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Source",
+          type: "Website",
           href: "https://github.com/rishabh21g/hiresense.git",
-          icon: <Icons.github className="size-3" />,
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
@@ -209,6 +223,32 @@ export const DATA = {
           type: "Source",
           href: "https://github.com/rishabh21g/market.in.git",
           icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Trip-X",
+      href: "https://trip-planner-snowy.vercel.app/",
+      dates: "",
+      active: true,
+      description:
+        "Developed Trip-X, an intelligent travel recommendation platform that transforms user wanderlust into personalized adventures. Built with React.js, Tailwind CSS, and Firebase, integrating multiple APIs to deliver real-time hotel suggestions, curated itineraries, and dynamic destination overviews.",
+      technologies: [
+        "React.js",
+        "Tailwind CSS",
+        "Firebase",
+        "Google Places API",
+        "Unsplash API",
+        "Google Search Text API",
+        "Gemini API",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://trip-planner-snowy.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",

@@ -6,7 +6,6 @@ import { ResumeCard } from "@/components/resume-card";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
-// import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -24,7 +23,7 @@ export default function Page() {
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] md:text-sm text-xs tracking-tighter font-semibold text-muted-foreground sm:md:text-base/relaxed lg:text-sm/relaxed xl:text-base/relaxed"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
@@ -35,7 +34,9 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <h2 className="md:text-3xl text-xl tracking-tighter font-semibold ">
+              Work Experience
+            </h2>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -49,7 +50,6 @@ export default function Page() {
                 title={work.company}
                 subtitle={work.title}
                 href={work.href}
-                badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
               />
@@ -62,7 +62,7 @@ export default function Page() {
           <div className="flex-col flex flex-1 space-y-1.5">
             <BlurFadeText
               delay={BLUR_FADE_DELAY}
-              className="text-xl font-bold tracking-tighter sm:text-2xl xl:text-3xl/none"
+              className="md:text-3xl text-xl tracking-tighter font-semibold"
               yOffset={8}
               text={`Proof of Work`}
             />
@@ -74,7 +74,9 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
+            <h2 className="md:text-3xl text-xl tracking-tighter font-semibold ">
+              Skills
+            </h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
@@ -96,20 +98,11 @@ export default function Page() {
         </div>
       </section>
       <section id="projects">
-        <div className="space-y-12 w-full py-12">
+        <div className="space-y-8 w-full py-8">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
-                </p>
-              </div>
-            </div>
+            <h2 className="md:text-3xl text-xl tracking-tighter font-semibold">
+              Projects
+            </h2>
           </BlurFade>
 
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
@@ -137,7 +130,9 @@ export default function Page() {
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
+            <h2 className="md:text-3xl text-xl tracking-tighter font-semibold ">
+              Education
+            </h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
@@ -158,13 +153,13 @@ export default function Page() {
         </div>
       </section>
       <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-8">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            <div className="space-y-2">
+              <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
                 Drop a Message
               </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed ">
                 Have a project idea, collaboration in mind, or just want to say
                 hi?{" "}
                 <Link
@@ -173,7 +168,7 @@ export default function Page() {
                 >
                   Slide into my DMs on Instagram
                 </Link>{" "}
-                — I’m always up for a good chat and new opportunities!
+                I’m always up for a good chat and new opportunities!
               </p>
             </div>
           </BlurFade>

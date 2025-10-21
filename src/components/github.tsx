@@ -10,14 +10,14 @@ interface GitHubHeatmapProps {
 
 const GitHubHeatmap: React.FC<GitHubHeatmapProps> = ({ username  ,delay}) => {
   return (
-    <BlurFade delay={Number(delay) + 0.02}>
+    <BlurFade delay={Number(delay)}>
       <div className="bg-transparent text-center">
         <GitHubCalendar
           username={username}
           colorScheme="dark"
-          fontSize={12}
-          blockSize={10}
-          blockMargin={4}
+          fontSize={10}
+          blockSize={8}
+          blockMargin={3}
         />
       </div>
     </BlurFade>
