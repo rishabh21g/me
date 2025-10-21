@@ -30,10 +30,8 @@ export const DATA = {
   name: "Rishabh Gupta",
   initials: "DV",
   location: "Saket, New Delhi ",
-  description:
-    "Full-stack developer crafting impactful web solutions — turning ideas into reality with code.",
-  summary:
-    "I’m Rishabh Gupta, a full-stack developer with a strong front-end foundation and backend proficiency across JavaScript, TypeScript, Node.js, and Go (Golang). I specialize in building fast, scalable, and AI-integrated web apps using modern stacks like React.js, Next.js, and Express, alongside powerful APIs and cloud services.",
+  description: "Software Development Engineer",
+  summary: "Software Development Engineer",
   // avatarUrl: "/me.png",
   skills: [
     { name: "JavaScript", icon: <SiJavascript /> },
@@ -60,11 +58,9 @@ export const DATA = {
     { name: "Windows", icon: <FaWindows /> },
     { name: "Vercel", icon: <SiVercel /> },
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
-    email: "25f1002822@ds.study.iitm.ac.in",
+    email: "rishabhiitm@zohomail.in",
     tel: "+91 8840952165",
     social: {
       GitHub: {
@@ -219,5 +215,4 @@ export const DATA = {
       video: "",
     },
   ],
-
 } as const;
