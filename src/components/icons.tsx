@@ -1,4 +1,4 @@
-import { GlobeIcon, MailIcon } from "lucide-react";
+import { Download, GlobeIcon, MailIcon } from "lucide-react";
 import { FaLinkedin, FaYoutube, FaGithub, FaInstagram } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -24,4 +24,5 @@ export const Icons = {
   typescript: (props: IconProps) => <SiTypescript {...props} />,
   react: (props: IconProps) => <SiReact {...props} />,
   github: (props: IconProps) => <FaGithub {...props} />,
+  resume: (props: IconProps) => <Download {...props} />,
 };

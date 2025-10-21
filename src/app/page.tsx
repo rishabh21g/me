@@ -11,11 +11,11 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10">
+    <main className="flex flex-col min-h-[100dvh] space-y-10 ">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
+        <div className="mx-auto w-full max-w-2xl space-y-4">
           <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
+            <div className="flex-col flex flex-1 space-y-1">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
@@ -32,7 +32,7 @@ export default function Page() {
         </div>
       </section>
       <section id="work">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col gap-y-2">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="md:text-3xl text-xl tracking-tighter font-semibold ">
               Work Experience
@@ -177,3 +177,6 @@ export default function Page() {
     </main>
   );
 }
+
+
+ 

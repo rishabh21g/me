@@ -35,7 +35,7 @@ export const DATA = {
   initials: "RG",
   location: "Saket, New Delhi",
   description:
-    "Software Development Engineer specializing in designing, developing, and maintaining scalable applications, writing clean and efficient code, and collaborating with cross-functional teams to deliver high-quality software solutions",
+    "Software Development Engineer specializing in Golang and JavaScript, with expertise in building scalable backend systems and modern web applications.",
   skills: [
     { name: "Go", icon: <SiGo className="w-5 h-5" /> },
     { name: "JavaScript", icon: <SiJavascript className="w-5 h-5" /> },
@@ -102,6 +102,12 @@ export const DATA = {
         name: "Send Email",
         url: "https://mail.google.com/mail/?view=cm&fs=1&to=rishabhiitm@zohomail.in",
         icon: Icons.email,
+        navbar: true,
+      },
+      resume: {
+        name: "Download Resume",
+        url: "https://workdrive.zohopublic.in/external/81ef16ece4e56036e414e69c9233b8618d7838d1a27b71b347cf811a16c0ad68/download",
+        icon: Icons.resume,
         navbar: true,
       },
     },
