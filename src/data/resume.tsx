@@ -99,7 +99,7 @@ export const DATA = {
       },
       insta: {
         name: "Instagram",
-        url: "https://www.instagram.com/rishabh21g_/",
+        url: "https://www.instagram.com/rishabh_share",
         icon: Icons.insta,
         navbar: true,
       },
@@ -167,6 +167,37 @@ export const DATA = {
 
   projects: [
     {
+      title: "GoDraw-Free infinite whiteboard (PWA)",
+      href: "https://plus.godraw.app",
+      dates: "",
+      active: true,
+      description:
+        "GoDraw is a real-time collaborative whiteboard app designed for fast, natural sketching and seamless teamwork. It features expressive, hand-drawn-style drawing with multiple fill options, powered by Rough.js and the Canvas API. Real-time sync is enabled by Yjs CRDTs and a Go backend with Gorilla WebSocket. The stack includes React, Docker, Nginx, and PostgreSQL, ensuring performance and reliability. GoDraw is built in public with continuous updates and a focus on user experience.",
+      technologies: [
+        "React",
+        "Nginx",
+        "Rough.js",
+        "Canvas API",
+        "Yjs",
+        "Y websocket",
+        "CRDT",
+        "Go",
+        "Gorilla websocket",
+        "Docker",
+        "Docker Compose",
+        "Nginx",
+        "PostgreSQL",
+      ],
+      links: [
+        {
+          type: "Live",
+          href: "https://plus.godraw.app",
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
       title: "MailGo (Concurrent Email Sender)",
       href: "https://github.com/rishabh21g/mailchimp",
       dates: "",
@@ -232,83 +263,6 @@ export const DATA = {
           type: "Website",
           href: "https://github.com/rishabh21g/LK-interview-app.git",
           icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Flappy Bird Mobile Game",
-      href: "https://github.com/rishabh21g/flappy-bird.git",
-      dates: "",
-      active: true,
-      description:
-        "Built a fully functional Flappy Bird clone using React Native and Expo with high-performance graphics and smooth animations. Implemented physics-based gameplay mechanics, collision detection, real-time scoring, and gesture controls using Skia for 2D rendering and Reanimated for fluid animations. Features include game state management, responsive touch controls, and optimized performance",
-      technologies: [
-        "React Native",
-        "Expo",
-        "React Native Skia",
-        "React Native Reanimated",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/rishabh21g/flappy-bird.git",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Market.in",
-      href: "https://github.com/rishabh21g/market.in.git",
-      dates: "",
-      active: true,
-      description:
-        "Developed Market.in, an e-commerce platform for electronics using the MERN stack and TypeScript. Features include an advanced admin dashboard, search optimization, frontend/backend caching, lazy loading, and Redux-based state management.",
-      technologies: [
-        "MongoDB",
-        "Express.js",
-        "React.js",
-        "Node.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Redux Toolkit",
-        "React Table",
-        "Chart.js",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/rishabh21g/market.in.git",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Trip-X",
-      href: "https://trip-planner-snowy.vercel.app/",
-      dates: "",
-      active: true,
-      description:
-        "Developed Trip-X, an intelligent travel recommendation platform that transforms user wanderlust into personalized adventures. Built with React.js, Tailwind CSS, and Firebase, integrating multiple APIs to deliver real-time hotel suggestions, curated itineraries, and dynamic destination overviews.",
-      technologies: [
-        "React.js",
-        "Tailwind CSS",
-        "Firebase",
-        "Google Places API",
-        "Unsplash API",
-        "Google Search Text API",
-        "Gemini API",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://trip-planner-snowy.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
