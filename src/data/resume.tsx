@@ -192,6 +192,7 @@ export const DATA = {
         {
           type: "Live",
           href: "https://plus.godraw.app",
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
